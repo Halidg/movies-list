@@ -10,23 +10,23 @@
   </section>  
 </template>
   
-  <script>
-  import Card from '../Ui/Card.vue';  
+<script>
+import Card from '../Ui/Card.vue';  
 
-  export default {
-    components:{
-      Card
-    },
-    mounted() {
-      this.$store.dispatch('getMovies')
-    },
-    computed: {
-      Movies() {
-        return this.$store.getters.movies
-      }
-    },
-  }
-  </script>
+export default {
+  components:{
+    Card
+  },
+  mounted() {
+    this.$store.dispatch('getMovies')
+  },
+  computed: {
+    Movies() {
+      return this.$store.getters.movies
+    }
+  },
+}
+</script>
   
 <style lang="scss" scoped>
 @import "@/styles/mixins.scss";  
