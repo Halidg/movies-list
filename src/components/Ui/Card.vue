@@ -1,26 +1,26 @@
 <template>
-    <div class="card" @click="toDetail(movie.id)">
-      <div class="card__content">
-        <img class="card__img" :src=movie.poster alt="">
-        <h2 class="card__title">{{movie.name}}</h2>
-        <span class="card__description">{{movie.description}}</span>
-        <div class="card__info">
-          <Tag class="card__tag" :rating="movie.rating">
-            <img src="../../assets/icons/star.svg" alt="star">
-            <span class="card__tag-text">{{movie.rating}}</span>  
-          </Tag>
-          <Tag class="card__tag" :theme="'blue'">
-            <img src="../../assets/icons/film.svg" alt="film">
-            <span class="card__tag-text">{{movie.genre}}</span>  
-          </Tag>
-          <Tag>
-            <img src="../../assets/icons/time.svg" alt="time">
-            <span class="card__tag-text">{{movie.duration}}</span>
-          </Tag>      
-        </div>
-      </div>  
-    </div>        
-  </template>
+  <div class="card" @click="toDetail(movie.id)">
+    <div class="card__content">
+      <img class="card__img" :src=movie.poster alt="">
+      <h2 class="card__title">{{movie.name}}</h2>
+      <span class="card__description">{{movie.description}}</span>
+      <div class="card__info">
+        <Tag class="card__tag" :rating="movie.rating">
+          <img src="../../assets/icons/star.svg" alt="star">
+          <span class="card__tag-text">{{movie.rating}}</span>  
+        </Tag>
+        <Tag class="card__tag" :theme="'blue'">
+          <img src="../../assets/icons/film.svg" alt="film">
+          <span class="card__tag-text">{{movie.genre}}</span>  
+        </Tag>
+        <Tag>
+          <img src="../../assets/icons/time.svg" alt="time">
+          <span class="card__tag-text">{{movie.duration}}</span>
+        </Tag>      
+      </div>
+    </div>  
+  </div>        
+</template>
     
 <script>
 import Tag from './Tag.vue'  
