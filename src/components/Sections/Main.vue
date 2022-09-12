@@ -1,14 +1,14 @@
 <template>
-    <section class="main">
-      <div class="container">
-        <div class="main__content">
-          <Card v-for="item in Movies"
-           :key="item.id" 
-           :movie="item"></Card>
-        </div>  
-      </div>     
-    </section>  
-  </template>
+  <section class="main">
+    <div class="container">
+      <div class="main__content">
+        <Card v-for="item in Movies"
+          :key="item.id" 
+          :movie="item"></Card>
+      </div>  
+    </div>     
+  </section>  
+</template>
   
   <script>
   import Card from '../Ui/Card.vue';  
