@@ -5,7 +5,7 @@
         <h2 class="card__title">{{movie.name}}</h2>
         <span class="card__description">{{movie.description}}</span>
         <div class="card__info">
-          <Tag class="card__tag" :theme="movie.rating">
+          <Tag class="card__tag" :rating="movie.rating">
             <img src="../../assets/icons/star.svg" alt="star">
             <span class="card__tag-text">{{movie.rating}}</span>  
           </Tag>

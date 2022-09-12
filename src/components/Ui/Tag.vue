@@ -2,8 +2,8 @@
   <div 
     class="tag"
     :class="{
-          'tag__green' : theme > 7,
-          'tag__red' : theme < 5 ,
+          'tag__green' : rating > 7,
+          'tag__red' : rating < 5 ,
           'tag__purple' : theme === 'purple',
           'tag__blue'  : theme === 'blue'
         }"
@@ -15,7 +15,8 @@
 <script>
 export default {
   props: {
-    theme: String || Number
+    theme: String,
+    rating: Number
   }
 }
 </script>

@@ -6,7 +6,7 @@
           <h2 class="detail__title">{{movie.name}}</h2>
           <img class="detail__img" :src='movie.poster' alt="">
           <div class="detail__info">
-            <Tag class="detail__tag" :theme="movie.rating">
+            <Tag class="detail__tag" :rating="movie.rating">
               <img src="../../assets/icons/star.svg" alt="star">
               <span class="detail__tag-text">{{movie.rating}}</span>  
             </Tag>
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/mixins.scss"; 
- 
+
 .detail {
   padding-top: 120px;
   background: #0C0C0C;
