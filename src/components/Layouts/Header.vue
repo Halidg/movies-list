@@ -19,6 +19,7 @@
   
   <style lang="scss" scoped>
   @import "@/styles/mixins.scss";
+  
   .header {
     width: 100%;
     position: fixed;

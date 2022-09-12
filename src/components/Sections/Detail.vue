@@ -66,7 +66,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/mixins.scss";  
+@import "@/styles/mixins.scss"; 
+ 
 .detail {
   padding-top: 120px;
   background: #0C0C0C;
