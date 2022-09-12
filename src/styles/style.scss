@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import "@/styles/mixins.scss";
+
+* {
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+    outline: none;
+  }
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #1E1E1E;
+  margin: 0;
+}
+
+#app {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1344px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
